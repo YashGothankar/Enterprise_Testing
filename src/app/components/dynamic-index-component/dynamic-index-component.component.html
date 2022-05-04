@@ -1,0 +1,28 @@
+<!-- <table #tableMain class="table table-condensed gridStyle edit-table no-more-tables">
+    <thead>
+      <tr>
+        -------------------------------------------------- Get Column Name ----------------------------------------
+        <th *ngFor = "let header of headerToPublish">{{header}}</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+</table>   -->
+<button class="btn-group">Add</button>
+<table class="table table-condensed gridStyle edit-table no-more-tables">
+  <thead>
+    <tr>
+      <th *ngFor="let header of headerToPublish">{{header}}</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let record of records">
+      <td *ngFor="let value of record">{{value}}</td>
+      <td>
+        <button type="button">Edit</button>
+        <button type="button">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
